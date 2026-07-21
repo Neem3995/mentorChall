@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.blog-card {
+  width: 100%;
+  max-width: 384px;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 7%);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 8px 8px 0 hsl(0, 0%, 7%);
+}
+
+.card-image {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.card-content {
+  margin-top: 24px;
+}
+
+.category {
+  display: inline-block;
+  background-color: hsl(47, 88%, 63%);
+  color: hsl(0, 0%, 7%);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.publish-date {
+  margin: 12px 0 0;
+  color: hsl(0, 0%, 7%);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card-title {
+  margin: 12px 0 0;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.card-title a {
+  color: hsl(0, 0%, 7%);
+  text-decoration: none;
+}
+
+.card-title a:hover,
+.card-title a:focus-visible {
+  color: hsl(47, 88%, 63%);
+}
+
+.card-title a:focus-visible {
+  outline: 2px solid hsl(0, 0%, 7%);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.card-description {
+  margin: 12px 0 0;
+  color: hsl(0, 0%, 42%);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.author {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.author-name {
+  margin: 0;
+  color: hsl(0, 0%, 7%);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.attribution {
+  padding: 16px;
+  color: hsl(0, 0%, 42%);
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(0, 0%, 7%);
+  font-weight: 800;
+}
+
+@media (max-width: 420px) {
+  .card-title {
+    font-size: 20px;
+  }
+}
+
